@@ -38,7 +38,7 @@ func New(opts Options) (*Middleware, error) {
 	metadataURL := opts.URL
 	metadataURL.Path = metadataURL.Path + "/saml/metadata"
 	acsURL := opts.URL
-	acsURL.Path = acsURL.Path + "/saml/acs"
+	acsURL.Path = acsURL.Path + "/saml"
 	logr := opts.Logger
 	if logr == nil {
 		logr = logger.DefaultLogger
